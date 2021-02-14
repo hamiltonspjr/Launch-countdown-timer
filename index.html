@@ -5,8 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Launch countdown timer</title>
+    <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>We're lauching soon</h1>
+        <section class="timer-container">
+            <div class="card">
+                <div>
+                    <span>08</span>
+                </div>
+                <p>Days</p>
+            </div>
+            <div class="card">
+                <div>
+                    <span>23</span>
+                </div>
+                <p>Hours</p>
+            </div>
+            <div class="card">
+                <div>
+                    <span>55</span>
+                </div>
+                <p>Minutes</p>
+            </div>
+            <div class="card">
+                <div>
+                    <span>41</span>
+                </div>
+                <p>Seconds</p>
+            </div>
+        </section>
+        <a href="#">+ Nova contagem</a>
+        <footer>
+                <a href="#"><img src="./public/images/icon-facebook.svg" alt="icone do facebook"></a>
+                <a href="#"><img src="./public/images/icon-pinterest.svg" alt="icone do pinterest"></a>
+                <a href="#"><img src="./public/images/icon-instagram.svg" alt="icone do instagram"></a>
+        </footer>
+        <div class="modal-container">
+            <form class="modal">
+                <h1>Nova contagem</h1>
+                <label for="date">Data</label>
+                <input type="date" name="date" id="date">
+                <button type="submit">Contar</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
