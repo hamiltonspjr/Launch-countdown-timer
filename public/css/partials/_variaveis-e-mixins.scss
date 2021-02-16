@@ -3,8 +3,7 @@ $soft-red: hsl(345, 95%, 68%);
 $white: #fff;
 $dark-desaturated-blue: hsl(236, 21%, 26%);
 $very-dark-blue: hsl(235, 16%, 14%);
-$l-device: 1200px;
-$m-device:760px;
+$m-device:700px;
 
 @mixin font($size) {
     @if $size == 25 {
@@ -25,16 +24,8 @@ $m-device:760px;
 }
 
 @mixin dimensions ($size) {
-    @if $size == desktop {
-        @media (min-width: $l-device) {
-            @content;
-        }
-    }@else if $size == tablet {
-        @media (min-width: $m-device) and (max-width: $l-device - 1){
-            @content;
-        }
-    }@else if $size == mobile {
-        @media (max-width: $m-device - 1) {
+    @if $size == mobile {
+        @media (max-width: $m-device) {
             @content;
         }
     }
