@@ -19,6 +19,7 @@ const form = document.querySelector('[data-countdown="form"]');
 
 function countdown(event) {
   event.preventDefault();
+  modal.classList.remove("show");
   try {
     let date = form.elements[0].value;
     checkValue(date);
@@ -97,7 +98,6 @@ function months(value) {
   }
   return mes;
 }
-
 // fazer o calculo para dias, horas, minutos, segundos
 function transformDay(day){
     return day / (24 * 60 * 60 * 1000);
@@ -123,4 +123,3 @@ function dataScreen(dataOne, dateTwo) {
     spanSeconds.innerText = `${Math.round(transformSeconds(dataOne) - transformSeconds(dateTwo))}`;
     
 }
-// fazer com que o valor seja atualizado a medida que o tempo passa
